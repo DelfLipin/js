@@ -1,0 +1,33 @@
+{
+  "name": "api-usuarios",
+  "version": "1.0.0",
+  "description": "API RESTful para gerenciar usuários com Node.js, Express e Knex",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "create-db": "node src/database/createDatabase.js",
+    "migrate": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "migrate:make": "knex migrate:make"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "node",
+    "express",
+    "knex",
+    "mysql"
+  ],
+  "author": "Desenvolvedor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.4.2",
+    "mysql2": "^3.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "nodemon": "^3.1.10"
+  }
+}
